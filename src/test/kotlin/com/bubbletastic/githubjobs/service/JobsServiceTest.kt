@@ -1,13 +1,13 @@
 package com.bubbletastic.githubjobs.service
 
-import org.junit.jupiter.api.BeforeEach
-import org.junit.jupiter.api.Test
+import org.junit.Before
+import org.junit.Test
 
 class JobsServiceTest {
 
     lateinit var jobsService: JobsService
 
-    @BeforeEach
+    @Before
     fun setup() {
         jobsService = JobsService(NetworkHandlerMock())
     }

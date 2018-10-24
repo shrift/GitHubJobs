@@ -5,7 +5,7 @@ import com.beust.klaxon.JsonObject
 import com.beust.klaxon.Parser
 import com.bubbletastic.githubjobs.service.JobsService
 import com.bubbletastic.githubjobs.service.NetworkHandler
-import org.junit.jupiter.api.Test
+import org.junit.Test
 import java.io.InputStream
 
 @Suppress("UNCHECKED_CAST")
