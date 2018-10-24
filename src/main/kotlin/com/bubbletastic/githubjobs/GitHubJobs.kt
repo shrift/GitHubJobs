@@ -10,8 +10,8 @@ fun main(_args: Array<String>) {
 }
 
 class GitHubJobs(private val jobsService: JobsService = JobsService()) {
-    private val cities = listOf("Boston", "San Francisco", "Los Angeles", "Denver", "Boulder", "Chicago", "New York")
-    private val languages = listOf("Ruby", "Go", "Python", "Java", "Kotlin", "Elixir", "PHP", "Swift", "Objective-C", "JavaScript", "Node")
+    private val cities = listOf("Boston", "San Francisco", "Los Angeles", "Denver", "Boulder", "Chicago", "New York").sorted()
+    private val languages = listOf("Ruby", "Go", "Python", "Java", "Kotlin", "Elixir", "PHP", "Swift", "Objective-C", "JavaScript", "Node").sorted()
 
     fun findPredefinedJobs() {
         val totalJobs = JsonArray<JsonObject>()
